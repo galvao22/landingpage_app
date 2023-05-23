@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>LandingPage</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+
+    <header id="topo">
+
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container">
+
+                <a href="#" class="navbar-brand">
+                    <h3>SeuApp.com</h3>
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#topo" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sobre" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contato_container" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="inicio">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div id="lado1">
+
+                            <h3>Titulo com nome do App</h3>
+                            <p>Esse app foi desenvolvido especialmente para voce que deseja ter acesso a tudo que
+                                deseja! Não perca tudo que ele tem a oferecer a voce, baixe ja na loja de aplicativos do
+                                seu celular.</p>
+
+                            <div id="img_botoes">
+                                <img src="imagens/btn_appstore.png" alt="">
+                                <img src="imagens/btn_playstore.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div id="lado2">
+
+                            <img src="imagens/cel-vazio2.png" alt="">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="sobre">
+
+            <div id="div_sobre" class="w-100">
+
+
+                <h1>Sobre nosso app</h1>
+
+                <p id="subtitulo_sobre">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+
+                <div class="d-flex justify-content-around flex-wrap">
+
+                    <div class="box-vantagem">
+                        <img src="imagens/seguranca.png" alt="">
+                        <p>Maior segurança</p>
+                    </div>
+
+                    <div class="box-vantagem">
+                        <img src="imagens/armazenamento.png" alt="">
+                        <p>Maior armazenamento</p>
+                    </div>
+
+                    <div class="box-vantagem">
+                        <img src="imagens/busca.png" alt="">
+                        <p>Busca de dados otimizada</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contato">
+            <div id="contato_container" class="container">
+                <div class="row">
+
+                    <div class="col-12 col-lg-6 d-lg-flex p-5">
+                        <!-- Textos da seção -->
+                        <div class="align-self-center">
+                            <h1 class="display-5 border-bottom">Para mais informações</h1>
+                            <h5>Endereço: Rua Vira Esquina - 171, sala 2</h5>
+                            <h5>Atendimento: (11)1221-3223 / (11)2112-2332</h5>
+                            <h5>E-mail: nossoapp@teste-atendimento.com</h5>
+                            <br>
+                            <h4>Visite nosso Instagram</h4>
+                            <a href="https://api.whatsapp.com/send?phone=5521991487173"
+                                class="btn btn-dark btn-block tamanho-20">
+                                <i class="fab fa-instagram"></i>
+                                Instagram
+                            </a>
+                            <br>
+                            <h4>Ou se preferir, nos chame pelo Whatsapp</h4>
+                            <a href="https://api.whatsapp.com/send?phone=5521991487173"
+                                class="btn btn-dark btn-block tamanho-20">
+                                <i class="fab fa-whatsapp"></i>
+                                Whatsapp
+                            </a>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 d-lg-flex p-5" id="div_form_contato">
+
+                        <form class="form_contato">
+                            <div class="form-group">
+                                <label>Nome</label>
+                                <input type="text" class="form-control" placeholder="Seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label>Endereço de email</label>
+                                <input type="email" class="form-control" placeholder="Seu email">
+                                <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email,
+                                    com ninguém.</small>
+                            </div>
+                            <div class="form-group">
+                                <textarea type="text" class="form-control" placeholder="Sua mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark float-right">Enviar</button>
+                        </form>
+
+                    </div>
+
+                    <!--/fim textos da seção -->
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="d-flex">
+
+        <!--footer-->
+        <p>Todos os direitos reservados - Estudo web 2022</p>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap4/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
